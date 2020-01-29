@@ -22,7 +22,7 @@ export default [
     {
         id:'breakfast',
         name:'breakfast maker',
-        image:'../assets/.breakfast.jpg',
+        image:'../assets/breakfast.jpg',
     },
     {
         id:'bubblegum',
@@ -47,7 +47,7 @@ export default [
     { 
         id:'pen',
         name:'spork pen',
-        image:'..assets/pen.jpg',
+        image:'../assets/pen.jpg',
     },
     { 
         id:'pet-sweep',
@@ -72,7 +72,7 @@ export default [
     { 
         id:'tauntaun',
         name:'tauntuan snuggly',
-        image:'../assets/tauntaun',
+        image:'../assets/tauntaun.jpg',
     },
     { 
         id:'unicorn',
@@ -87,11 +87,11 @@ export default [
     { 
         id:'water-can',
         name:'zen water can',
-        image:'../assets/water-can',
+        image:'../assets/water-can.jpg',
     },
     { 
         id:'wine-glass',
         name:'spill proof wine glass',
-        image:'../assets/wine-glass',
+        image:'../assets/wine-glass.jpg',
     },
 ];

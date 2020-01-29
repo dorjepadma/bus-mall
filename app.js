@@ -28,6 +28,7 @@ initializeState();
 const thing = getRandomThing(thingData);
 let thing1 = getRandomThing(thingData);
 let thing2 = getRandomThing(thingData);
+console.log(thing)
 //Things should not repeat
 // while (thing.id === thing2.id); {
 //         thing2 = thing.getrandomThing();
@@ -55,6 +56,10 @@ const image1 = document.getElementById('image');
 const image2 = document.getElementById('image1');
 const image3 = document.getElementById('image2');
 
+image1.src = thing.image
+image2.src = thing1.image
+image3.src = thing2.image
+
 radio1.value = thing.id;
 radio2.value = thing1.id;
 radio3.value = thing2.id;
@@ -65,7 +70,7 @@ radio3span.textContent = thing2.name;
 radio1image.image1 = thing.image;
 radio2image.image2 = thing1.image1;
 radiot3iimage.image3 =thing2.image2;
-console.log(thing.name)
+
 
 //prevent from resetting every count
 const form = document.querySelector('form');

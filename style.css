@@ -39,3 +39,9 @@ button {
 button:hover {
     background-color: turquoise
 }
+
+img {
+    width: 150x;
+    height: 150px;
+
+}
