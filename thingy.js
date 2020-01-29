@@ -1,4 +1,4 @@
-export const thingyData = [
+export const things = [
     {
         id:'bag',
         name:'robo bag',
