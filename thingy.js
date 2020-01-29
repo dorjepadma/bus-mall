@@ -1,4 +1,4 @@
-export const things = [
+export default [
     {
         id:'bag',
         name:'robo bag',
@@ -34,51 +34,63 @@ export const things = [
         name:'upsidedown chair',
         image:'../assets/chair.jpg',
     },
-    { id:'dog-duck',
+    { 
+        id:'dog-duck',
         name:'dog duck bill',
         image:'../assets/dog-duck.jpg',
     },
-    { id:'dragon',
+    { 
+        id:'dragon',
         name:'dragon meat',
         image:'../assets/dragon.jpg',
     },
-    { id:'pen',
+    { 
+        id:'pen',
         name:'spork pen',
         image:'..assets/pen.jpg',
     },
-    { id:'pet-sweep',
+    { 
+        id:'pet-sweep',
         name:'pet feet sweeper',
         image:'../assets/pet-sweep.jpg',
     },
-    { id:'scissors',
+    { 
+        id:'scissors',
         name:'pizza scissors',
         image:'../assets/scissors.jpg'
     },
-    { id:'shark',
+    { 
+        id:'shark',
         name:'shark snuggly',
         image:'../assets/shark.jpg',
     },
-    { id:'sweep',
+    { 
+        id:'sweep',
         name:'baby sweeper',
         image:'../assets/sweep.jpg',
     },
-    { id:'tauntaun',
+    { 
+        id:'tauntaun',
         name:'tauntuan snuggly',
         image:'../assets/tauntaun',
     },
-    { id:'unicorn',
+    { 
+        id:'unicorn',
         name:'unicorn meat',
         image:'../assets/unicorn.jpg',
     },
-    { id:'usb',
+    { 
+        id:'usb',
         name:'usb tentacle',
         image:'../assets/usb.jpg',
     },
-    { id:'water-can',
+    { 
+        id:'water-can',
         name:'zen water can',
         image:'../assets/water-can',
     },
-    { id:'wine-glass',
+    { 
+        id:'wine-glass',
         name:'spill proof wine glass',
         image:'../assets/wine-glass',
     },

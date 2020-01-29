@@ -1,4 +1,4 @@
-import things from '../bus-mall/thingy.js';
+import things from './thingy.js';
 // import { ThingyArray } from '../bus-mall/thingyArray.js';
 const thingData = things.slice();
 // const thingyImageTags = document.querySelectorAll('img');
@@ -7,8 +7,8 @@ const thingData = things.slice();
 //const new thingy array
 // const thingyData = things.slice();
 //create a loop to sort items
-export function findById(things, id) {
-    for (let i =0; i < DataTransferItemList.length; i++) {
+export function findById(thingData, id) {
+    for (let i = 0; i < DataTransferItemList.length; i++) {
         const item = items[i];
         if (item.id === id) {
             return item;
@@ -21,13 +21,13 @@ let consumerChoiceTally;
 //set initial state to 0
 const initializeState = () => {
     consumerChoice = 0;
-    consumerVoteTally = []
+    consumerChoiceTally = []
 };
 initializeState();
 //display random products
-const thing = getRandomThing.getRandomThing(thingData);
-let thing2 = getRandomThing.getRandomThing(thingData);
-let thing3 = getRandomThing.getRandomThinig(thingData);
+const thing = getRandomThing(thingData);
+let thing1 = getRandomThing(thingData);
+let thing2 = getRandomThing(thingData);
 //Things should not repeat
 // while (thing.id === thing2.id); {
 //         thing2 = thing.getrandomThing();
@@ -35,32 +35,42 @@ let thing3 = getRandomThing.getRandomThinig(thingData);
 //         randomthingThing3.id = thing.getrandomThing();
 // replacing this with more efficient code.
 
-while (thing.id === thing2.id
-       || thing2.id === thing3.id
-       || thing3.id === thing.id)
+while (thing.id === thing1.id
+       || thing1.id === thing2.id
+       || thing2.id === thing.id)
     { 
+        thing1 = getRandomThing(thingsData);
         thing2 = getRandomThing(thingsData);
-        thing3 = getRandomThing(thingsData);
     }
 // render things onto the screen, I will have to get the image up to 
 const radio1 = document.getElementById('thing');
 const radio2 = document.getElementById('thing1');
 const radio3 = document.getElementById('thing2');
+
 const radio1span = document.getElementById('thingspan');
-const radio2span = document.getElementById('thingspan1');
-const radio2span = document.getElementById('thingspan2');
+const radio2span = document.getElementById('thing1span');
+const radio3span = document.getElementById('thing2span');
+
+const image1 = document.getElementById('image');
+const image2 = document.getElementById('image1');
+const image3 = document.getElementById('image2');
 
 radio1.value = thing.id;
-radio2.value1 = thing2.id;
-radio3.value = prodcut2.id;
+radio2.value = thing1.id;
+radio3.value = thing2.id;
 radio1span.textContent = thing.name;
 radio2span.textContent = thing1.name;
 radio3span.textContent = thing2.name;
-};
+
+radio1image.image1 = thing.image;
+radio2image.image2 = thing1.image1;
+radiot3iimage.image3 =thing2.image2;
+console.log(thing.name)
+
 //prevent from resetting every count
 const form = document.querySelector('form');
  form.addEventListener('submit', (e) => {
-     e.preventDefalut();
+     e.preventDefault();
 
      const formData = new FormData(form);
 
@@ -77,11 +87,11 @@ const form = document.querySelector('form');
    });
    }
    //what does this do?
-   document.querySelector('input[naem="thing"]:checked') = false
+   document.querySelector('input[name="thing"]:checked') = false
 //puts votes into local storage by Stringifying them
-   localStorage.setIemt('choice', JSON.stringify(thingChoiceDetails));
+   localStorage.setItem('choice', JSON.stringify(thingChoiceDetails));
   if (totalChocie >=25) {
-      window.locatioin = 'choices.html';
+      window.location = 'choices.html';
   }
 
   displayThreeThings();
@@ -90,9 +100,9 @@ function reset() {
     initializeState();
 }
 
-function getRAndomThing(someThing) {
+function getRandomThing(someThing) {
     const randomIndex = Math.floor(Math.random() * someThing.length);
-    constrandomThing = thingData[ramdomThing];
+    const randomThing = thingData[randomIndex];
 
     return randomThing;
 }
