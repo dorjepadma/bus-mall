@@ -1,4 +1,4 @@
-const results = JSON.parse(localStorage.getIte('choices'));
+const results = JSON.parse(localStorage.getItem('choices'));
 const choices = [];
 const labels = [];
 //grabbing the thing results
@@ -16,7 +16,7 @@ new Chart (ctx, {
         datasets: [{
             label: '# of Choices',
             data: 'choices',
-            backgroundColor: ['lightblue', 'blue', 'yellow', 'green', 'purple', 'orange']
+            backgroundColor: ['lightred', 'red', 'orange', 'blue', 'green', 'purple', 'orange']
         }]
     },
     options: {

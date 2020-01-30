@@ -12,7 +12,7 @@ export default [
     {
         id:'bathroom',
         name:'bathroom tp',
-        image:'../bathroom.jpg',
+        image:'../assets/bathroom.jpg',
     },
     {
         id:'boots',
@@ -67,7 +67,7 @@ export default [
     { 
         id:'sweep',
         name:'baby sweeper',
-        image:'../assets/sweep.jpg',
+        image:'../assets/sweep.png',
     },
     { 
         id:'tauntaun',
@@ -82,7 +82,7 @@ export default [
     { 
         id:'usb',
         name:'usb tentacle',
-        image:'../assets/usb.jpg',
+        image:'../assets/usb.gif',
     },
     { 
         id:'water-can',

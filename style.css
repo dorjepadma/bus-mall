@@ -10,7 +10,7 @@ header {
     border: 10px black;
 }
 body {
-    background-image: url(../bus-mall/assets/snow-bus.jpg);
+   
 }
 div {
     width: auto;
@@ -43,5 +43,6 @@ button:hover {
 img {
     width: 150x;
     height: 150px;
-
+    border: solid;
+    border-color: black;
 }
