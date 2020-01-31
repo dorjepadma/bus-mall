@@ -1,9 +1,9 @@
-const results = JSON.parse(localStorage.getItem('choices'));
-const choices = [];
+const results = JSON.parse(localStorage.getItem('choice'));
+const choice = [];
 const labels = [];
 //grabbing the thing results
 results.forEach(thing => {
-    choices.push(thing.choices);
+    choice.push(thing.choice);
     labels.push(thing.id);
 });
 //what is ctx again?
@@ -14,8 +14,8 @@ new Chart (ctx, {
     data: {
         labels: labels,
         datasets: [{
-            label: '# of Choices',
-            data: 'choices',
+            label: 'Number of Choices',
+            data: choice,
             backgroundColor: ['lightred', 'red', 'orange', 'blue', 'green', 'purple', 'orange']
         }]
     },

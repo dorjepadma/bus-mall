@@ -7,9 +7,9 @@ const thingData = things.slice();
 //const new thingy array
 // const thingyData = things.slice();
 //create a loop to sort items
-export function findById(thingData, id) {
-    for (let i = 0; i < DataTransferItemList.length; i++) {
-        const item = item[i];
+export function findById(array, id) {
+    for (let i = 0; i < array.length; i++) {
+        const item = array[i];
         if (item.id === id) {
             return item;
         }
@@ -77,9 +77,9 @@ form.addEventListener('submit', (e) => {
     const selectedThingId = formData.get('thing');
 
     totalChoices++;
-console.log(totalChoices);
+
     const thingInChoicesArray = findById(thingChoiceDetails, selectedThingId);
-    
+   console.log(thingChoiceDetails);
 
     if (thingInChoicesArray) {
         thingInChoicesArray.choice++;
