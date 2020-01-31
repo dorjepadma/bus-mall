@@ -79,7 +79,7 @@ form.addEventListener('submit', (e) => {
     totalChoices++;
 
     const thingInChoicesArray = findById(thingChoiceDetails, selectedThingId);
-   console.log(thingChoiceDetails);
+
 
     if (thingInChoicesArray) {
         thingInChoicesArray.choice++;
