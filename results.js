@@ -16,7 +16,7 @@ new Chart (ctx, {
         datasets: [{
             label: 'Number of Choices',
             data: choice,
-            backgroundColor: ['lightred', 'red', 'orange', 'blue', 'green', 'purple', 'orange']
+            backgroundColor: ['light red', 'red', 'orange', 'yellow', 'blue', 'green', 'purple', 'orange', 'red', 'orange', 'blue', 'green', 'purple', 'orange', 'yellow', 'green', 'blue', 'aquamarine', 'violet', 'orange']
         }]
     },
     options: {
